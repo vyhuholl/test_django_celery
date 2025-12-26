@@ -22,6 +22,7 @@
    celery -A project worker -l info
    ```
 4. Миграции (при первом запуске)
+   
    Через uv:
    ```bash
    uv run manage.py migrate
