@@ -1,5 +1,6 @@
 # Установка и запуск
 1. Установка зависимостей
+   
    Через uv:
    ```bash
    uv sync
@@ -30,6 +31,7 @@
    python manage.py makemigrations && python manage.py migrate
    ```
 5. Запуск Django
+   
    Через uv:
    ```bash
    uv run manage.py runserver
