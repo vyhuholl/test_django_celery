@@ -7,7 +7,9 @@
    ```
    Через pip:
    ```bash
-   pip install -r requirements.txt
+   python -m venv venv
+   source venv/bin/activate
+   python -m pip install -r requirements.txt
    ```
 2. Запуск Redis
    ```bash
