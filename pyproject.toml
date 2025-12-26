@@ -1,0 +1,32 @@
+[project]
+name = "test-django-celery"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "celery>=5.6.0",
+    "django>=6.0",
+    "django-celery-results>=2.6.0",
+    "redis>=7.1.0",
+]
+
+[tool.ruff]
+fix = true
+unsafe-fixes = true
+line-length = 79
+lint.select = ["ALL"]
+lint.ignore = ["D", "Q", "ANN", "FA100", "COM812", "ISC001", "RUF001", "RUF002", "RUF003", "T201"]
+exclude = [
+    "**/migrations/*",
+    "**/manage.py",
+    "**/settings.py",
+    "**/test_db.py",
+]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.extend-per-file-ignores]
+"wsgi.py" = ["I", "E402"]
+"manage.py" = ["I", "E402"]
